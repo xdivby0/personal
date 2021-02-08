@@ -37,6 +37,7 @@ blocks:
       epilogue:
         on_pass:
           commands:
+            - cache delete build
             - cache store build ./out
   - name: Deploy to Netlify
     dependencies:
@@ -52,9 +53,12 @@ blocks:
         commands:
           - checkout
           - cache restore
+          - cache restore netlify-cli
           - cache restore build
           - npm i netlify-cli -g
       epilogue:
         always:
           commands:
             - cache store
+            - cache delete netlify-cli
+            - cache store netlify-cli ./node_modulesexecu
