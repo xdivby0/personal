@@ -8,24 +8,19 @@ blocks:
   - name: Build
     task:
       jobs:
-        - name: Checkout
-          commands:
-            - checkout
-    dependencies: []
-  - name: Install Dependencies
-    dependencies:
-      - Build
-    task:
-      jobs:
-        - name: Install Node
-          commands:
-            - nvm use 12
-        - name: Install npm dependencies
+        - name: Install Dependencies
           commands:
             - npm install
+      prologue:
+        commands:
+          - checkout
+          - nvm use 12
+          - node --version
+          - npm --version
+    dependencies: []
   - name: Build and Export
     dependencies:
-      - Install Dependencies
+      - Build
     task:
       jobs:
         - name: Build
@@ -34,11 +29,3 @@ blocks:
         - name: Export
           commands:
             - next export
-  - name: 'Block #4'
-    dependencies:
-      - Build
-    task:
-      jobs:
-        - name: test
-          commands:
-            - ls -lah
