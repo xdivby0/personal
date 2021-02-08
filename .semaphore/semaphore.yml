@@ -51,5 +51,10 @@ blocks:
       prologue:
         commands:
           - checkout
+          - cache restore
           - cache restore build
           - npm i netlify-cli -g
+      epilogue:
+        always:
+          commands:
+            - cache store
