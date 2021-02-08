@@ -27,7 +27,9 @@ blocks:
       jobs:
         - name: npm run-script build
           commands:
+            - cache restore
             - npm run-script build
+            - cache store
   - name: Deploy to Netlify
     dependencies:
       - Build and Export
@@ -37,4 +39,5 @@ blocks:
       jobs:
         - name: netlify deploy --dir=out --prod
           commands:
+            - cache restore
             - netlify deploy --dir=out --prod
