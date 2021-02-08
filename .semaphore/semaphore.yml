@@ -5,9 +5,12 @@ agent:
     type: e1-standard-2
     os_image: ubuntu1804
 blocks:
-  - name: 'Block #1'
+  - name: Build
     task:
       jobs:
-        - name: 'Job #1'
+        - name: Checkout
           commands:
             - checkout
+        - name: Build
+          commands:
+            - npm build
