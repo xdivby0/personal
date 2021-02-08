@@ -5,10 +5,10 @@ agent:
     type: e1-standard-2
     os_image: ubuntu1804
 blocks:
-  - name: Build
+  - name: Install Dependencies
     task:
       jobs:
-        - name: Install Dependencies
+        - name: npm install
           commands:
             - npm install
       prologue:
@@ -20,12 +20,19 @@ blocks:
     dependencies: []
   - name: Build and Export
     dependencies:
-      - Build
+      - Install Dependencies
     task:
       jobs:
-        - name: Build
+        - name: npm run-script-build
           commands:
-            - next build
-        - name: Export
+            - npm run-script-build
+  - name: Deploy to Netlify
+    dependencies:
+      - Build and Export
+    task:
+      secrets:
+        - name: Netlify Creds Personal
+      jobs:
+        - name: netlify deploy --dir=out --prod
           commands:
-            - next export
+            - netlify deploy --dir=out --prod
