@@ -34,3 +34,11 @@ blocks:
         - name: Export
           commands:
             - next export
+  - name: 'Block #4'
+    dependencies:
+      - Build
+    task:
+      jobs:
+        - name: test
+          commands:
+            - ls -lah
