@@ -96,9 +96,8 @@ export default function Home() {
                     <div className="md:mx-8 md:order-2 flex flex-col justify-center">
                         <h3 className="text-4xl font-bold text-primary-bold mb-4">My Personal Blog</h3>
                         <p>
-                            With Subscribee, every creator can take recurring payments from
-                            their fans in return for exclusive content.
-                            No coding, no filing VAT in different countries and no dealing with payment processors.
+                            On my personal blog, I write about many technical but also non-technical stuff 
+                            (like marketing, career, etc.). Mostly web-development, though.
                         </p>
                         <div className="flex justify-evenly p-8">
                             <a href="https://blog.cetindere.de" target="_blank" rel="noreferrer">
