@@ -59,7 +59,7 @@ export default function Home() {
                             <p>
                                 With Subscribee, every creator can take recurring payments from
                                 their fans in return for exclusive content.
-                                No coding, no filing VAT in different countries and no dealing with payment processors.
+                                No coding, filing VAT in different countries or dealing with payment processors.
                             </p>
                             <div className="flex justify-evenly p-8">
                                 <a href="https://subscribee.net" target="_blank" rel="noreferrer">
