@@ -15,8 +15,6 @@ blocks:
         commands:
           - checkout
           - nvm use 12
-          - node --version
-          - npm --version
           - cache restore
       epilogue:
         on_pass:
@@ -34,6 +32,7 @@ blocks:
       prologue:
         commands:
           - checkout
+          - nvm use 12
           - cache restore
       epilogue:
         on_pass:
