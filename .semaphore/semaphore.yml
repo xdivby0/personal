@@ -1,0 +1,60 @@
+version: v1.0
+name: Initial Pipeline
+agent:
+  machine:
+    type: e1-standard-2
+    os_image: ubuntu1804
+blocks:
+  - name: Install Dependencies
+    task:
+      jobs:
+        - name: npm install
+          commands:
+            - npm install
+      prologue:
+        commands:
+          - checkout
+          - nvm use 12
+          - cache restore
+      epilogue:
+        on_pass:
+          commands:
+            - cache store
+    dependencies: []
+  - name: Build and Export
+    dependencies:
+      - Install Dependencies
+    task:
+      jobs:
+        - name: npm run-script build
+          commands:
+            - npm run-script build
+      prologue:
+        commands:
+          - checkout
+          - nvm use 12
+          - cache restore
+      epilogue:
+        on_pass:
+          commands:
+            - cache store build ./out
+  - name: Deploy to Netlify
+    dependencies:
+      - Build and Export
+    task:
+      secrets:
+        - name: Netlify Creds Personal
+      jobs:
+        - name: netlify deploy --dir=out --prod
+          commands:
+            - netlify deploy --dir=out --prod
+      prologue:
+        commands:
+          - checkout
+          - cache restore
+          - cache restore build
+          - npm i netlify-cli -g
+      epilogue:
+        always:
+          commands:
+            - cache store
