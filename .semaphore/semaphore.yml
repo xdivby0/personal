@@ -11,9 +11,26 @@ blocks:
         - name: Checkout
           commands:
             - checkout
+    dependencies: []
+  - name: Install Dependencies
+    dependencies:
+      - Build
+    task:
+      jobs:
+        - name: Install Node
+          commands:
+            - nvm use 12
+        - name: 'Job #2'
+          commands:
+            - npm install
+  - name: Build and Export
+    dependencies:
+      - Install Dependencies
+    task:
+      jobs:
         - name: Build
           commands:
             - next build
-        - name: 'Job #3'
+        - name: Export
           commands:
             - next export
