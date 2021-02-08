@@ -36,7 +36,7 @@ export default function Home() {
                                 I am a full stack web developer and I love creating pleasant user experiences.
                             </p>
                             <p className="mb-4">
-                                For the past 3 years I have been obsessed with web development and currently I work as an IT Consultant at Exxeta in Karlsruhe, Germany.
+                                For the past 4 years I have been obsessed with web development and currently I work as an IT Consultant at Exxeta in Karlsruhe, Germany.
                             </p>
                         </div>
                     </div>
