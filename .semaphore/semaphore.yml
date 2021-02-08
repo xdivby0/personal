@@ -10,7 +10,9 @@ blocks:
       jobs:
         - name: npm install
           commands:
+            - cache restore
             - npm install
+            - cache store
       prologue:
         commands:
           - checkout
@@ -23,9 +25,9 @@ blocks:
       - Install Dependencies
     task:
       jobs:
-        - name: npm run-script-build
+        - name: npm run-script build
           commands:
-            - npm run-script-build
+            - npm run-script build
   - name: Deploy to Netlify
     dependencies:
       - Build and Export
