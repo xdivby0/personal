@@ -61,4 +61,4 @@ blocks:
           commands:
             - cache store
             - cache delete netlify-cli
-            - cache store netlify-cli ./node_modulesexecu
+            - cache store netlify-cli $(npm root -g)
