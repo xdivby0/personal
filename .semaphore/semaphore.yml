@@ -13,4 +13,7 @@ blocks:
             - checkout
         - name: Build
           commands:
-            - npm build
+            - next build
+        - name: 'Job #3'
+          commands:
+            - next export
