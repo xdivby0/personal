@@ -53,7 +53,7 @@ export default function Home() {
             <div className="mx-auto text-center text-primary-font max-w-7xl">
                 
                 <div className="md:flex md:items-stretch p-12 xl:shadow-xl rounded-lg bg-primary-white mb-16">
-                    <div className="mb-8 md:mx-8 md:order-2 flex flex-col justify-between">
+                    <div className="mb-8 md:mx-8 md:order-2 md:w-2/3 flex flex-col justify-between">
                         <div className="flex-1 flex flex-col justify-center">
                             <h3 className="text-4xl font-bold text-primary-bold mb-4">Subscribee</h3>
                             <p>
