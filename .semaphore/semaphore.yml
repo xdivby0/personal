@@ -47,5 +47,8 @@ blocks:
       jobs:
         - name: netlify deploy --dir=out --prod
           commands:
-            - cache restore
             - netlify deploy --dir=out --prod
+      prologue:
+        commands:
+          - cache restore
+          - npm i netlify-cli -g
