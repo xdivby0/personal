@@ -10,15 +10,18 @@ blocks:
       jobs:
         - name: npm install
           commands:
-            - cache restore
             - npm install
-            - cache store
       prologue:
         commands:
           - checkout
           - nvm use 12
           - node --version
           - npm --version
+          - cache restore
+      epilogue:
+        on_pass:
+          commands:
+            - cache store
     dependencies: []
   - name: Build and Export
     dependencies:
@@ -27,8 +30,14 @@ blocks:
       jobs:
         - name: npm run-script build
           commands:
-            - cache restore
             - npm run-script build
+      prologue:
+        commands:
+          - checkout
+          - cache restore
+      epilogue:
+        on_pass:
+          commands:
             - cache store
   - name: Deploy to Netlify
     dependencies:
