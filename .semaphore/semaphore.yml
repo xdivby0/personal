@@ -50,5 +50,6 @@ blocks:
             - netlify deploy --dir=out --prod
       prologue:
         commands:
+          - checkout
           - cache restore
           - npm i netlify-cli -g
