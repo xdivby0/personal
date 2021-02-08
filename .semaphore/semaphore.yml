@@ -20,7 +20,7 @@ blocks:
         - name: Install Node
           commands:
             - nvm use 12
-        - name: 'Job #2'
+        - name: Install npm dependencies
           commands:
             - npm install
   - name: Build and Export
