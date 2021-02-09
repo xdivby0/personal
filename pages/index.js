@@ -16,7 +16,7 @@ export default function Home() {
         </div>
         
         {/*About Section*/}
-        <div className="xl:bg-primary-darker pb-12">
+        <div className="bg-primary-darker pb-12">
             <div className="bg-primary-dark text-primary-white p-12 pt-24 lg:pt-12 mx-auto max-w-7xl xl:rounded-xl">
                 <div className="relative">
                     <div className="absolute right-1/2 transform translate-x-1/2 -top-40 lg:-top-28 xl:right-16 xl:translate-x-0 transition-all hover:-translate-y-2 duration-300">
@@ -48,7 +48,7 @@ export default function Home() {
         </div>
         
         {/* Portfolio Section */}
-        <div className="bg-primary-white xl:bg-primary-darker pb-16">
+        <div className="bg-primary-white bg-primary-darker pb-16">
             <h2 className="text-5xl font-bold text-primary-bold text-center mb-8">What I work on</h2>
             <div className="mx-auto text-center text-primary-font max-w-7xl">
                 
