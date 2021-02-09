@@ -94,7 +94,7 @@ export default function Home() {
 
                 <div className="md:flex md:items-stretch p-12 xl:shadow-xl rounded-lg bg-primary-white">
                     <div className="md:mx-8 md:order-2 flex flex-col justify-center">
-                        <h3 className="text-4xl font-bold text-primary-bold mb-4">My Personal Blog a</h3>
+                        <h3 className="text-4xl font-bold text-primary-bold mb-4">My Personal Blog</h3>
                         <p>
                             On my personal blog, I write about many technical but also non-technical stuff 
                             (like marketing, career, etc.). Mostly web-development, though.
