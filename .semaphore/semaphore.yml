@@ -56,10 +56,10 @@ blocks:
           - cache restore
           - cache restore netlify-cli
           - cache restore build
-          - npm i netlify-cli -g
+          - yarn global add netlify-cli --prefix /usr/local
       epilogue:
         always:
           commands:
             - cache store
             - cache delete netlify-cli
-            - cache store netlify-cli $(npm root -g)
+            - cache store netlify-cli /usr/local/bin/netlify-cli
