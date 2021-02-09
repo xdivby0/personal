@@ -48,7 +48,7 @@ export default function Home() {
         </div>
         
         {/* Portfolio Section */}
-        <div className="bg-primary-white bg-primary-darker pb-16">
+        <div className="bg-primary-darker pb-16">
             <h2 className="text-5xl font-bold text-primary-bold text-center mb-8">What I work on</h2>
             <div className="mx-auto text-center text-primary-font max-w-7xl">
                 
