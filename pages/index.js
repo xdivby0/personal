@@ -52,7 +52,7 @@ export default function Home() {
             <h2 className="text-5xl font-bold text-primary-bold text-center mb-8">What I work on</h2>
             <div className="mx-auto text-center text-primary-font max-w-7xl">
                 
-                <div className="md:flex md:items-stretch p-12 rounded-lg bg-primary-dark mb-16">
+                <div className="md:flex md:items-stretch p-12 xl:rounded-lg bg-primary-dark mb-16">
                     <div className="mb-8 md:mx-8 md:order-2 md:w-2/3 flex flex-col justify-between">
                         <div className="flex-1 flex flex-col justify-center">
                             <h3 className="text-4xl font-bold text-primary-bold mb-4">Subscribee</h3>
@@ -75,7 +75,7 @@ export default function Home() {
                     <img src="/subscribee_mobile.png" className="md:w-1/3 rounded-lg shadow-png"/>
                 </div>
 
-                <div className="md:flex md:items-stretch p-12 rounded-lg bg-primary-dark mb-16">
+                <div className="md:flex md:items-stretch p-12 xl:rounded-lg bg-primary-dark mb-16">
                     <div className="md:mx-8 flex flex-col justify-center">
                         <h3 className="text-4xl font-bold text-primary-bold mb-4">Minervabooks</h3>
                         <p>
@@ -92,7 +92,7 @@ export default function Home() {
                     <img src="/minervabooks.png" className="md:w-2/3 rounded-md shadow-png"/>
                 </div>
 
-                <div className="md:flex md:items-stretch p-12 rounded-lg bg-primary-dark">
+                <div className="md:flex md:items-stretch p-12 xl:rounded-lg bg-primary-dark">
                     <div className="md:mx-8 md:order-2 flex flex-col justify-center">
                         <h3 className="text-4xl font-bold text-primary-bold mb-4">My Personal Blog</h3>
                         <p>
