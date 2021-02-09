@@ -55,9 +55,9 @@ blocks:
           - nvm use 12
           - cache restore netlify-cli
           - cache restore build
-          - yarn global add netlify-cli --prefix /usr/local
+          - yarn global add netlify-cli --prefix ./netlify-cli
       epilogue:
         always:
           commands:
             - cache delete netlify-cli
-            - cache store netlify-cli /usr/local/bin/netlify
+            - cache store netlify-cli ./netlify-cli
