@@ -26,6 +26,8 @@ module.exports = {
       },
       boxShadow: {
         DEFAULT: "rgba(0, 0, 0, 0.3) 0 0.15rem 1rem",
+        accent: "#e6394655 0 0.15rem 1rem",
+        primary: "#6a040f44 0 0.1rem 1rem",
         hover: "rgba(0, 0, 0, 0.35) 0 0.1rem 1.7rem",
       }
     },
@@ -42,17 +44,18 @@ module.exports = {
       violet: colors.violet,
       purple: colors.purple,
       primary: {
-        black: "#180202",
-        bold: "#371919",
-        font: "#623737",
-        darker: "#871919",
-        dark: "#a41e1e",
-        DEFAULT: "#c32828",
-        bright: "#ff5252",
-        brighter: "#ffdbdb",
-        brightest: "#fff1f0",
-        white: "#fff8f6"
+        black: "#FFF8E5",
+        bold: "#FCDFB0",
+        font: "#d9c29d",
+        darker: "#131435",
+        dark: "#1E1F57",
+        DEFAULT: "#6A040F",
+        brighter: "#FCDFB0",
+        white: "#FFF8E5"
       },
+      accent: {
+        DEFAULT: "#850935"
+      }
     },
   },
   variants: {
