@@ -54,7 +54,7 @@ module.exports = {
         white: "#FFF8E5"
       },
       accent: {
-        DEFAULT: "#850935"
+        DEFAULT: "#bf1535"
       }
     },
   },
