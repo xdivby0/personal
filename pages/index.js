@@ -110,9 +110,6 @@ export default function Home() {
                     </div>
                     <img src="/blog.png" className="md:w-2/3 rounded-md shadow-png flex-shrink-0 self-center"/>
                 </div>
-                <div className="mb-16">
-                   <h1 className="font-black text-primary-font text-7xl">Hallo</h1> 
-                </div>
             </div>
         </div>
         {/*<Link href="/about">About Page</Link>*/}
