@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Segoe+UI&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
 .shadow-png{
     filter: drop-shadow(0 0.15rem 1rem rgba(0, 0, 0, 0.3));
+}
+
+.card{
+    @apply md:flex p-12 xl:rounded-lg bg-primary-dark shadow-md mb-16;
 }

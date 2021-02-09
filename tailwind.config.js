@@ -31,6 +31,10 @@ module.exports = {
         hover: "rgba(0, 0, 0, 0.35) 0 0.1rem 1.7rem",
       }
     },
+    fontFamily: {
+        sans: "Segoe UI", 
+        serif: "Roboto Slab"
+    },
     colors:{
       transparent: "transparent",
       current: "currentColor",
