@@ -112,10 +112,10 @@ export default function Home() {
                 </div>
             </div>
             <div className="max-w-7xl mx-auto">
-                <h1 className="text-primary-bold font-bold text-5xl font-sans text-center mb-2"> 
+                <h1 className="text-primary-bold font-bold text-5xl font-sans text-center mb-2 p-8"> 
                      Any Questions or Remarks?
                 </h1>
-                <h2 className="text-primary-bold text-3xl text-center font-sans mb-4"><i className="fab fa-connectdevelop"></i> Let's connect!</h2>
+                <h2 className="text-primary-bold text-3xl text-center font-sans mb-4 p-8"><i className="fab fa-connectdevelop"></i> Let's connect!</h2>
                 <div className="flex justify-evenly flex-col md:flex-row p-8 items-stretch w-auto">
                     <a href="https://twitter.com/_divby0" target="_blank" rel="noreferrer" className="button hoverable m-4 text-center">
                         <i className="fab fa-twitter mr-1"/> Slide into my DMs on Twitter
