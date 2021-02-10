@@ -3,7 +3,7 @@ import Project from "../components/Project";
 
 export default function Home() {
   return (
-    <div className="animate-fadein text-lg font-serif">
+    <div className="animate-fadein text-primary-font text-lg font-serif">
         {/* Heading */}
         <div className="bg-primary-darker p-12 py-20 md:pb-32 text-center">
             <h1 className="font-sans text-7xl font-bold text-primary-bold mb-4 opacity-0 animate-appear">Hi, I'm Bengin</h1>
@@ -17,7 +17,7 @@ export default function Home() {
         
         {/*About Section*/}
         <div className="bg-primary-darker pb-12">
-            <div className="bg-primary-dark text-primary-white p-12 pt-24 lg:pt-12 mx-auto max-w-7xl xl:rounded-xl shadow-md">
+            <div className="bg-primary-dark p-12 pt-24 lg:pt-12 mx-auto max-w-7xl xl:rounded-xl shadow-md">
                 <div className="relative">
                     <div className="absolute right-1/2 transform translate-x-1/2 -top-40 lg:-top-28 xl:right-16 xl:translate-x-0 transition-all hover:scale-110 hover:-translate-y-2 duration-300 ease-in-out">
                         <img
@@ -31,7 +31,7 @@ export default function Home() {
                     <i className="hidden md:block fas fa-fingerprint text-9xl text-primary-bold mr-12"/>
                     <div>
                         <h1 className="font-sans text-4xl text-primary-bold font-semibold mb-4 opacity-0 animate-appear">About</h1>
-                        <div className="opacity-0 animate-appear text-primary-font">
+                        <div className="opacity-0 animate-appear">
                             <p className="mb-4">
                                 I am a full stack web developer and I love creating pleasant user experiences.
                             </p>
@@ -50,7 +50,7 @@ export default function Home() {
         {/* Portfolio Section */}
         <div className="bg-primary-darker pb-16">
             <h2 className="font-sans text-5xl font-bold text-primary-bold text-center mb-8 px-8">What I work on</h2>
-            <div className="mx-auto text-center text-primary-font max-w-7xl">
+            <div className="mx-auto text-center max-w-7xl">
                 
                 <div className="card">
                     <div className="mb-8 md:mx-8 md:order-2 md:w-2/3 flex flex-col justify-between">
@@ -109,6 +109,23 @@ export default function Home() {
                         </div>
                     </div>
                     <img src="/blog.png" className="md:w-2/3 rounded-md shadow-png flex-shrink-0 self-center hoverable hover:scale-105"/>
+                </div>
+            </div>
+            <div className="max-w-7xl mx-auto">
+                <h1 className="text-primary-bold font-bold text-5xl font-sans text-center mb-2"> 
+                     Any Questions or Remarks?
+                </h1>
+                <h2 className="text-primary-bold text-3xl text-center font-sans mb-4"><i className="fab fa-connectdevelop"></i> Let's connect!</h2>
+                <div className="flex justify-evenly flex-col md:flex-row p-8 items-stretch w-auto">
+                    <a href="https://twitter.com/_divby0" target="_blank" rel="noreferrer" className="button hoverable m-4 text-center">
+                        <i className="fab fa-twitter mr-1"/> Slide into my DMs on Twitter
+                    </a>
+                    <a href="https://instagram.com/_divby0" target="_blank" rel="noreferrer" className="button hoverable m-4 text-center">
+                        <i className="fab fa-instagram mr-1"/> Say Hi on Instagram 
+                    </a>
+                    <span onClick={()=>window.prompt("Copy to clipboard: Ctrl+C", "divby1#9554")} target="_blank" rel="noreferrer" className="button hoverable m-4 text-center cursor-pointer">
+                        <i className="fab fa-discord mr-1"/> Copy my Discord Tag
+                    </span>
                 </div>
             </div>
         </div>
