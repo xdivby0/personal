@@ -19,9 +19,9 @@ export default function Home() {
         <div className="bg-primary-darker pb-12">
             <div className="bg-primary-dark text-primary-white p-12 pt-24 lg:pt-12 mx-auto max-w-7xl xl:rounded-xl shadow-md">
                 <div className="relative">
-                    <div className="absolute right-1/2 transform translate-x-1/2 -top-40 lg:-top-28 xl:right-16 xl:translate-x-0 transition-all hover:-translate-y-2 duration-300">
+                    <div className="absolute right-1/2 transform translate-x-1/2 -top-40 lg:-top-28 xl:right-16 xl:translate-x-0 transition-all hover:scale-110 hover:-translate-y-2 duration-300 ease-in-out">
                         <img
-                            className="w-36 h-36 object-cover rounded-xl transition-all hover:shadow-hover shadow-md transform hover:scale-110 opacity-0 animate-appear"
+                            className="w-36 h-36 object-cover rounded-xl hoverable animate-appear opacity-0"
                             src="/portrait.png"
                             alt="Bengin Cetindere"/>
                     </div>
@@ -63,16 +63,16 @@ export default function Home() {
                             </p>
                             <div className="flex justify-evenly p-8">
                                 <a href="https://subscribee.net" target="_blank" rel="noreferrer">
-                                    <i className="fas fa-link bg-accent p-3 rounded-md text-primary-white shadow-md"/>
+                                    <i className="fas fa-link button hoverable"/>
                                 </a>
                                 <a href="https://twitter.com/subscribee_net" target="_blank" rel="noreferrer">
-                                    <i className="fab fa-twitter bg-accent p-3 rounded-md text-primary-white shadow-md"/>
+                                    <i className="fab fa-twitter button hoverable"/>
                                 </a>
                             </div>
                         </div>
-                        <img src="/subscribee_desktop.png" className="rounded-md shadow-png mt-12 flex-shrink-0 self-center"/>
+                        <img src="/subscribee_desktop.png" className="rounded-md shadow-png mt-12 flex-shrink-0 self-center hoverable hover:scale-105"/>
                     </div>
-                    <img src="/subscribee_mobile.png" className="md:w-1/3 rounded-lg shadow-png flex-shrink-0 self-center"/>
+                    <img src="/subscribee_mobile.png" className="md:w-1/3 rounded-lg shadow-png flex-shrink-0 self-center hoverable hover:scale-105"/>
                 </div>
 
                 <div className="card">
@@ -85,11 +85,11 @@ export default function Home() {
                         </p>
                         <div className="flex justify-evenly p-8">
                             <a href="https://minervabooks.net" target="_blank" rel="noreferrer">
-                                <i className="fas fa-link bg-accent p-3 rounded-md text-primary-white shadow-md"/>
+                                <i className="fas fa-link button hoverable"/>
                             </a>
                         </div>
                     </div>
-                    <img src="/minervabooks.png" className="md:w-2/3 rounded-md shadow-png flex-shrink-0 self-center"/>
+                    <img src="/minervabooks.png" className="md:w-2/3 rounded-md shadow-png flex-shrink-0 self-center hoverable hover:scale-105"/>
                 </div>
 
                 <div className="card">
@@ -101,14 +101,14 @@ export default function Home() {
                         </p>
                         <div className="flex justify-evenly p-8">
                             <a href="https://blog.cetindere.de" target="_blank" rel="noreferrer">
-                                <i className="fas fa-link bg-accent p-3 rounded-md text-primary-white shadow-md"/>
+                                <i className="fas fa-link button hoverable"/>
                             </a>
                             <a href="https://twitter.com/_divby0" target="_blank" rel="noreferrer">
-                                <i className="fab fa-twitter bg-accent p-3 rounded-md text-primary-white shadow-md"/>
+                                <i className="fab fa-twitter button hoverable"/>
                             </a>
                         </div>
                     </div>
-                    <img src="/blog.png" className="md:w-2/3 rounded-md shadow-png flex-shrink-0 self-center"/>
+                    <img src="/blog.png" className="md:w-2/3 rounded-md shadow-png flex-shrink-0 self-center hoverable hover:scale-105"/>
                 </div>
             </div>
         </div>

@@ -5,6 +5,9 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      transitionTimingFunction: {
+        "in-out": "cubic-bezier(.51,.01,.51,1)",
+      },
       animation: {
         appear: "appear 1s cubic-bezier(.46,.04,.22,.87) 0.25s 1 forwards",
         fadein: "fadein 0.4s ease-in-out 1",
@@ -28,7 +31,7 @@ module.exports = {
         DEFAULT: "rgba(0, 0, 0, 0.3) 0 0.15rem 1rem",
         accent: "#e6394655 0 0.15rem 1rem",
         primary: "#6a040f44 0 0.1rem 1rem",
-        hover: "rgba(0, 0, 0, 0.35) 0 0.1rem 1.7rem",
+        hover: "rgba(0, 0, 0, 0.2) 0 0.2em 1rem",
       }
     },
     fontFamily: {

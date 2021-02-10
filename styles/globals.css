@@ -8,3 +8,11 @@
 .card{
     @apply md:flex p-12 xl:rounded-lg bg-primary-dark shadow-md mb-16;
 }
+
+.hoverable{
+    @apply transition-all ease-in-out hover:shadow-hover shadow-md transform hover:scale-110 hover:-translate-y-1 duration-300;
+}
+
+.button{
+    @apply bg-accent p-3 rounded-md text-primary-white shadow-md;
+}
