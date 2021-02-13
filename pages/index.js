@@ -72,7 +72,7 @@ export default function Home() {
                         </div>
                         <img src="/subscribee_desktop.png" className="rounded-md shadow-png mt-12 flex-shrink-0 self-center hoverable hover:scale-105"/>
                     </div>
-                    <img src="/subscribee_mobile.png" className="md:w-1/3 rounded-lg shadow-png flex-shrink-0 self-center hoverable hover:scale-105"/>
+                    <img src="/subscribee_mobile.png" className="md:w-1/3 rounded-lg shadow-none hover:shadow-none shadow-png flex-shrink-0 self-center hoverable hover:scale-105"/>
                 </div>
 
                 <div className="card">
