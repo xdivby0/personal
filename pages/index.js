@@ -79,9 +79,9 @@ export default function Home() {
                     <div className="md:mx-8 flex flex-col justify-center">
                         <h3 className="font-sans text-4xl font-bold text-primary-bold mb-4">Minervabooks</h3>
                         <p>
-                            With Subscribee, every creator can take recurring payments from
-                            their fans in return for exclusive content.
-                            No coding, no filing VAT in different countries and no dealing with payment processors.
+                            Minervabooks is a webapp that recommends books you'll love based on what you already
+                            like and what other users like. I used some Science techniques and developed algorithm stuff.
+                            The recommendations are really good but it's in german.
                         </p>
                         <div className="flex justify-evenly p-8">
                             <a href="https://minervabooks.net" target="_blank" rel="noreferrer">
