@@ -8,8 +8,13 @@ blocks:
   - name: Install Dependencies
     task:
       jobs:
-        - name: npm install
+        - name: backend
           commands:
+            - cd ./backend
+            - npm install
+        - name: frontend
+          commands:
+            - cd ./frontend
             - npm install
       prologue:
         commands:
@@ -21,14 +26,19 @@ blocks:
           commands:
             - cache store
     dependencies: []
-  - name: Build and Export
+  - name: Build Images for Local Testing
     dependencies:
       - Install Dependencies
     task:
       jobs:
-        - name: npm run-script build
+        - name: build backend
           commands:
+            - docker build -t subscribee-backend backend
+        - name: build frontend
+          commands:
+            - cd frontend
             - npm run-script build
+            - docker build -t subscribee-frontend .
       prologue:
         commands:
           - checkout
@@ -39,25 +49,3 @@ blocks:
           commands:
             - cache delete build
             - cache store build ./out
-  - name: Deploy to Netlify
-    dependencies:
-      - Build and Export
-    task:
-      secrets:
-        - name: Netlify Creds Personal
-      jobs:
-        - name: netlify deploy --dir=out --prod
-          commands:
-            - netlify deploy --dir=out --prod
-      prologue:
-        commands:
-          - checkout
-          - nvm use 12
-          - cache restore netlify-cli
-          - cache restore build
-          - yarn global add netlify-cli
-      epilogue:
-        always:
-          commands:
-            - cache delete netlify-cli
-            - cache store netlify-cli $(yarn global bin)
