@@ -10,11 +10,11 @@ blocks:
       jobs:
         - name: backend
           commands:
-            - cd ./backend
+            - cd backend
             - npm install
         - name: frontend
           commands:
-            - cd ./frontend
+            - cd frontend
             - npm install
       prologue:
         commands:
