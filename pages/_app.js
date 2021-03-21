@@ -6,6 +6,7 @@ function MyApp({ Component, pageProps }) {
     <Component {...pageProps} />
     <Head>
       <script src="https://kit.fontawesome.com/75cfbd6f8c.js" crossOrigin="anonymous"></script>
+      <script async src="https://cdn.splitbee.io/sb.js"></script>
     </Head>  
   </>
 }
