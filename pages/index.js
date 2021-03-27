@@ -3,11 +3,11 @@ import Project from "../components/Project";
 
 export default function Home() {
   return (
-    <div className="animate-fadein text-primary-font text-lg font-serif">
+    <div className="text-primary-font text-lg font-serif">
         {/* Heading */}
         <div className="bg-primary-darker p-12 py-20 md:pb-32 text-center">
-            <h1 className="font-sans text-7xl font-bold text-primary-bold mb-4 opacity-0 animate-appear">Hi, I'm Bengin</h1>
-            <h2 className="font-sans text-4xl font-bold text-primary-bold opacity-0 animate-appear">
+            <h1 className="font-sans text-7xl font-bold text-primary-bold mb-4">Hi, I'm Bengin</h1>
+            <h2 className="font-sans text-4xl font-bold text-primary-bold">
                 My Girlfriend calls me
                 a <span className="tracking-wide font-black bg-clip-text text-transparent animate-gradient bg-gradient-to-r from-blue-500 via-purple-500 to-blue-500">
                     tech-wizard
@@ -21,7 +21,7 @@ export default function Home() {
                 <div className="relative">
                     <div className="absolute right-1/2 transform translate-x-1/2 -top-40 lg:-top-28 xl:right-16 xl:translate-x-0 transition-all hover:scale-110 hover:-translate-y-2 duration-300 ease-in-out">
                         <img
-                            className="w-36 h-36 object-cover rounded-xl hoverable animate-appear opacity-0"
+                            className="w-36 h-36 object-cover rounded-xl hoverable"
                             src="/portrait.png"
                             alt="Bengin Cetindere"/>
                     </div>
@@ -30,8 +30,8 @@ export default function Home() {
                 <div className="md:flex md:items-center">
                     <i className="hidden md:block fas fa-fingerprint text-9xl text-primary-bold mr-12"/>
                     <div>
-                        <h1 className="font-sans text-4xl text-primary-bold font-semibold mb-4 opacity-0 animate-appear">About</h1>
-                        <div className="opacity-0 animate-appear">
+                        <h1 className="font-sans text-4xl text-primary-bold font-semibold mb-4">About</h1>
+                        <div className="">
                             <p className="mb-4">
                                 I am a full stack web developer and I love creating pleasant user experiences.
                             </p>
