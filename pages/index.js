@@ -88,8 +88,8 @@ export default function Home() {
                       </a>
                     </div>
                   </div>
-                  <img src="/screenshot_creating.png" className="md:w-1/3 rounded-md shadow-png flex-shrink-0 mb-8 md:mb-0 self-center hoverable hover:scale-105"/>
-                  <img src="/screenshot_result.png" className="md:w-1/3 rounded-md shadow-png flex-shrink-0 self-center hoverable hover:scale-105"/>
+                  <img src="/screenshot_creating.png" className="md:w-1/3 rounded-md shadow-none hover:shadow-none shadow-png flex-shrink-0 mb-8 md:mb-0 self-center hoverable hover:scale-105"/>
+                  <img src="/screenshot_result.png" className="md:w-1/3 rounded-md shadow-none hover:shadow-none shadow-png flex-shrink-0 self-center hoverable hover:scale-105"/>
                 </div>
 
                 <div className="card">
