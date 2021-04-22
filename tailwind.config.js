@@ -52,8 +52,8 @@ module.exports = {
       purple: colors.purple,
       primary: {
         black: "#FFF8E5",
-        bold: "#FCDFB0",
-        font: "#d9c29d",
+        bold: "#fcdfb0",
+        font: "#fcdfb0",
         darker: "#131435",
         dark: "#1E1F57",
         DEFAULT: "#6A040F",

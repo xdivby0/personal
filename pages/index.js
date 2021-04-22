@@ -3,7 +3,7 @@ import Project from "../components/Project";
 
 export default function Home() {
   return (
-    <div className="text-primary-font text-lg font-serif">
+    <div className="text-primary-font text-opacity-90 text-lg font-serif">
         {/* Heading */}
         <div className="bg-primary-darker p-12 py-20 md:pb-32 text-center">
             <h1 className="font-sans text-7xl font-bold text-primary-bold mb-4">Hi, I'm Bengin</h1>
@@ -76,7 +76,24 @@ export default function Home() {
                 </div>
 
                 <div className="card">
-                    <div className="md:mx-8 flex flex-col justify-center">
+                  <div className="md:mx-8 flex flex-col justify-center">
+                    <h3 className="font-sans text-4xl font-bold text-primary-bold mb-4">Greeet</h3>
+                    <p>
+                      Greeets are little pages that you can publish without configuration, designing or coding.
+                      Use them for all kind of things like birthday or christmas greeting cards 🍰
+                    </p>
+                    <div className="flex justify-evenly p-8">
+                      <a href="https://greeet.cards" target="_blank" rel="noreferrer">
+                        <i className="fas fa-link button hoverable"/>
+                      </a>
+                    </div>
+                  </div>
+                  <img src="/screenshot_creating.png" className="md:w-1/3 rounded-md shadow-png flex-shrink-0 mb-8 md:mb-0 self-center hoverable hover:scale-105"/>
+                  <img src="/screenshot_result.png" className="md:w-1/3 rounded-md shadow-png flex-shrink-0 self-center hoverable hover:scale-105"/>
+                </div>
+
+                <div className="card">
+                  <div className="md:mx-8 flex flex-col justify-center">
                         <h3 className="font-sans text-4xl font-bold text-primary-bold mb-4">Minervabooks</h3>
                         <p>
                             Minervabooks is a webapp that recommends books you'll love based on what you already

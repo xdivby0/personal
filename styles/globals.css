@@ -6,7 +6,7 @@
 }
 
 .card{
-    @apply md:flex p-12 xl:rounded-lg bg-primary-dark shadow-md mb-16;
+    @apply md:flex p-12 xl:rounded-lg bg-primary-dark shadow-md mb-16 md:gap-8;
 }
 
 .hoverable{
