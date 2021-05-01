@@ -22,7 +22,7 @@ export default function Home() {
                     <div className="absolute right-1/2 transform translate-x-1/2 -top-40 lg:-top-28 xl:right-16 xl:translate-x-0 transition-all hover:scale-110 hover:-translate-y-2 duration-300 ease-in-out">
                         <img
                             className="w-36 h-36 object-cover rounded-xl hoverable"
-                            src="/portrait.png"
+                            src="/portrait.webp"
                             alt="Bengin Cetindere"/>
                     </div>
                 </div>
@@ -70,9 +70,9 @@ export default function Home() {
                                 </a>
                             </div>
                         </div>
-                        <img src="/subscribee_desktop.png" className="rounded-md shadow-png mt-12 flex-shrink-0 self-center hoverable hover:scale-105"/>
+                        <img src="/subscribee_desktop.webp" className="rounded-md shadow-png mt-12 flex-shrink-0 self-center hoverable hover:scale-105"/>
                     </div>
-                    <img src="/subscribee_mobile.png" className="md:w-1/3 rounded-lg shadow-none hover:shadow-none shadow-png flex-shrink-0 self-center hoverable hover:scale-105"/>
+                    <img src="/subscribee_mobile.webp" className="md:w-1/3 rounded-lg shadow-none hover:shadow-none shadow-png flex-shrink-0 self-center hoverable hover:scale-105"/>
                 </div>
 
                 <div className="card">
@@ -88,8 +88,8 @@ export default function Home() {
                       </a>
                     </div>
                   </div>
-                  <img src="/screenshot_creating.png" className="md:w-1/3 rounded-md shadow-none hover:shadow-none shadow-png flex-shrink-0 mb-8 md:mb-0 self-center hoverable hover:scale-105"/>
-                  <img src="/screenshot_result.png" className="md:w-1/3 rounded-md shadow-none hover:shadow-none shadow-png flex-shrink-0 self-center hoverable hover:scale-105"/>
+                  <img src="/screenshot_creating.webp" className="md:w-1/3 rounded-md shadow-none hover:shadow-none shadow-png flex-shrink-0 mb-8 md:mb-0 self-center hoverable hover:scale-105"/>
+                  <img src="/screenshot_result.webp" className="md:w-1/3 rounded-md shadow-none hover:shadow-none shadow-png flex-shrink-0 self-center hoverable hover:scale-105"/>
                 </div>
 
                 <div className="card">
@@ -106,7 +106,7 @@ export default function Home() {
                             </a>
                         </div>
                     </div>
-                    <img src="/minervabooks.png" className="md:w-2/3 rounded-md shadow-png flex-shrink-0 self-center hoverable hover:scale-105"/>
+                    <img src="/minervabooks.webp" className="md:w-2/3 rounded-md shadow-png flex-shrink-0 self-center hoverable hover:scale-105"/>
                 </div>
 
                 <div className="card">
@@ -125,7 +125,7 @@ export default function Home() {
                             </a>
                         </div>
                     </div>
-                    <img src="/blog.png" className="md:w-2/3 rounded-md shadow-png flex-shrink-0 self-center hoverable hover:scale-105"/>
+                    <img src="/blog.webp" className="md:w-2/3 rounded-md shadow-png flex-shrink-0 self-center hoverable hover:scale-105"/>
                 </div>
             </div>
             <div className="max-w-7xl mx-auto">
