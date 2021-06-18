@@ -127,9 +127,27 @@ export default function Home() {
                     </div>
                     <img src="/blog.webp" className="md:w-2/3 rounded-md shadow-png flex-shrink-0 self-center hoverable hover:scale-105"/>
                 </div>
+              
+                <div className="card">
+                  <div className="mb-8 md:mx-8 md:order-2 md:w-2/3 flex flex-col justify-between">
+                    <div className="flex-1 flex flex-col justify-center">
+                      <h3 className="font-sans text-4xl font-bold text-primary-bold mb-4">4 AM Thoughts</h3>
+                      <p>
+                        4 AM Thoughts is a calm and classy premium theme for Ghost. It's not as "in-your-face" as most themes, but elegantly exquisite instead.
+                      </p>
+                      <div className="flex justify-evenly p-8">
+                        <a href="https://4amthoughts.cetindere.de/write/" target="_blank" rel="noreferrer">
+                          <i className="fas fa-link button hoverable"/>
+                        </a>
+                      </div>
+                    </div>
+                    <img src="/4amthoughts_desktop.webp" className="rounded-md shadow-png mt-12 flex-shrink-0 self-center hoverable hover:scale-105"/>
+                  </div>
+                  <img src="/4amthoughts_mobile.webp" className="md:w-1/3 rounded-lg shadow-none hover:shadow-none shadow-png flex-shrink-0 self-center hoverable hover:scale-105"/>
+                </div>
             </div>
-            <div className="max-w-7xl mx-auto">
-                <h1 className="text-primary-bold font-bold text-5xl font-sans text-center mb-2 p-8"> 
+          <div className="max-w-7xl mx-auto">
+            <h1 className="text-primary-bold font-bold text-5xl font-sans text-center mb-2 p-8"> 
                      Any Questions or Remarks?
                 </h1>
                 <h2 className="text-primary-bold text-3xl text-center font-sans mb-4 p-8"><i className="fab fa-connectdevelop"></i> Let's connect!</h2>
