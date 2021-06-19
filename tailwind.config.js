@@ -35,7 +35,7 @@ module.exports = {
       }
     },
     fontFamily: {
-        sans: "IBM Plex Sans", 
+        sans: "Inter", 
         serif: "Roboto Slab"
     },
     colors:{
